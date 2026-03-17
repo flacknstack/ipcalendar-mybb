@@ -11,8 +11,8 @@ $plugins->add_hook("global_intermediate", "inplaykalender_global");
 
 function inplaykalender_info(){
     return array(
-        "name"			=> "Inplaykalender",
-        "description"	=> "Fügt dem Forum einen Kalender hinzu, der extra auf das Ingame eines RPGs abgestimmt ist.",
+        "name"			=> "Inplay Calendar",
+        "description"	=> "Adds a calendar to the forum that is specifically tailored to the in-game setting of an RPG.",
         "website"		=> "http://github.com/user/its-sparks-fly",
         "author"		=> "sparks fly",
         "authorsite"	=> "http://github.com/user/its-sparks-fly",
@@ -54,9 +54,9 @@ function inplaykalender_install() {
      $cache->update_usergroups();
 
     $setting_group = array(
-        'name' => 'inplaykalender',
-        'title' => 'Inplaykalender Einstellungen',
-        'description' => 'Fügt dem Forum einen Kalender hinzu, der extra auf das Ingame eines RPGs abgestimmt ist.',
+        'name' => 'Inplay Calendar',
+        'title' => 'Adds a calendar to the forum that is specifically tailored to the in-game setting of an RPG.',
+        'description' => 'Adds a calendar to the forum that is specifically tailored to the in-game setting of an RPG.',
         'disporder' => 5, // The order your setting group will display
         'isdefault' => 0
     );
@@ -66,17 +66,17 @@ function inplaykalender_install() {
     $setting_array = array(
     // A text setting
     'inplaykalender_year' => array(
-        'title' => 'Spieljahr',
-        'description' => 'In welchem Jahr spielt dein RPG?',
+        'title' => 'Season',
+        'description' => 'In which year is your RPG set?',
         'optionscode' => 'text',
         'value' => '2017', // Default
         'disporder' => 1
     ),
     'inplaykalender_months' => array(
-        'title' => 'Spieljahr',
-        'description' => 'In welchen Monaten spielt dein RPG? Monate mit "," trennen.',
+        'title' => 'Season',
+        'description' => 'In which months does your RPG take place? Separate months with commas.',
         'optionscode' => 'text',
-        'value' => 'Januar,Februar,Maerz', // Default
+        'value' => 'January,February,March', // Default
         'disporder' => 1
     )
     );
@@ -96,7 +96,7 @@ function inplaykalender_install() {
         <table cellspacing="3" cellpadding="3" width="100%">
             <tr>
                 <td>
-                    <div class="tcat">Inplay-Info &raquo; Spieljahr: <strong>{$mybb->settings[\'inplaykalender_year\']}</strong> &raquo; <a href="inplaykalender.php" target="blank">[ Zum <em>Kalender</em> ]</a></div>
+                    <div class="tcat">In-Play Info » Game Year: <strong>{$mybb->settings['inplaykalender_year']}</strong> » <a href="inplaykalender.php" target="blank">[ Go to <em>Calendar</em> ]</a></div>
                 </td>
             </tr>
             <tr>
@@ -142,7 +142,7 @@ function inplaykalender_install() {
     $db->insert_query("templates", $header_inplaykalender_bit);
 
     $inplaykalender = [
-        'title'        => 'inplaykalender',
+        'title'        => 'Inplay Calendar',
         'template'    => $db->escape_string('<html>
         <head>
         <title>{$mybb->settings[\'bbname\']} - {$lang->inplaykalender}</title>
@@ -165,10 +165,10 @@ function inplaykalender_install() {
         <div style="width: 95%; margin: auto; padding: 8px;  font-size: 12px; line-height: 1.5em;">
             <table cellspacing="5" cellpadding="5" style="margin: 10px auto; font-size: 8px; text-align: center; text-transform: uppercase;">
                 <tr>
-                    <td class="szenen"><strong>Inplay-Szenen</strong></td>
+                    <td class="szenen"><strong>In-play scenes</strong></td>
                     <td class="event"><strong>Events</strong></td>
 					<td class="timeline"><strong>Plots</strong></td>
-					<td class="geburtstag"><strong>Geburtstage</strong></td>
+					<td class="geburtstag"><strong>Birthdays</strong></td>
                 </tr>
             </table>
             {$month_bit}
@@ -197,7 +197,7 @@ function inplaykalender_install() {
                 <td class="thead"><strong>Navigation</strong></td>
             </tr>
             <tr>
-                <td class="trow2 smalltext"><a href="inplaykalender.php">Kalender</a></td>
+                <td class="trow2 smalltext"><a href="inplaykalender.php">Calender</a></td>
             </tr>
             {$menu_add}
         </tbody>
@@ -261,7 +261,7 @@ function inplaykalender_install() {
 			<br /><br /><div class="thead">Events</div>
 			<div style="margin: 5px 40px;">
 				{$eventlist}</div>
-                <br /><br /><div class="thead">Geburtstage</div>
+                <br /><br /><div class="thead">Birthdays</div>
 			<div style="margin: 5px 40px;">
 				{$birthdayusers}</div>
 </div>'),
