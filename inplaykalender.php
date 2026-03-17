@@ -22,7 +22,7 @@ eval("\$menu = \"".$templates->get("inplaykalender_nav")."\";");
 
 // get year
 $year = $mybb->input['y'];
-// no year given? chose year set by admin! 
+// no year given? choose year set by admin! 
 if(empty($year)) {
     $year = $mybb->settings['inplaykalender_year'];
 }
