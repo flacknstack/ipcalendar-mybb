@@ -1,22 +1,22 @@
-Dieses Plugin fügt eurem Forum einen Mini-Kalender hinzu, der im Header (oder Footer) des Forums ausgegeben werden kann. 
+This plugin adds a mini-calendar to your forum, which can be displayed in the forum's header (or footer).
 
-Der vollständige Kalender des Jahres kann über inplaykalender.php erreicht werden. Über inplaykalender.php?y=2020 können vergangene oder kommende Jahre (hier z.B. 2020) erreicht werden. 
+The full annual calendar can be accessed via `inplaykalender.php`. Past or future years (e.g., 2020) can be accessed via `inplaykalender.php?y=2020`.
 
-<h1>Funktionen</h1>
+<h1>Features</h1>
 
 <ul>
-<li> Anzeige von Informationen aus dem Inplaytracker 3.0
-<li> Anzeige von Informationen aus dem Plottracker
-<li> Anzeige von Geburtstagen
-<li> Hinzufügen von eigenen Events [z.B können User Events wie Partys einfügen, die keinen Plot "wert" sind)
-<li> Verteilen von Berechtigungen, welche Gruppen Events hinzufügen können
-<li> Farbliche Anzeige der Events im Header inkl. Legende im Kalender
-<li> Eigene Seite: inplaykalender.php
-<li> Hinterlegen von Spieljahr und bespielten Monaten im Admin CP
+<li> Display of information from the Inplaytracker 3.0
+<li> Display of information from the Plottracker
+<li> Display of birthdays
+<li> Addition of custom events [e.g., users can add events like parties that aren't "significant" enough to be a full plot]
+<li> Permission management to determine which user groups can add events
+<li> Color-coded display of events in the header, including a legend within the calendar
+<li> Dedicated page: `inplaykalender.php`
+<li> Configuration of the in-game year and active months via the Admin CP
 </ul>
 
-<h1>Neue Templates</h1>
-Es wird folgende Templates neu hinzugefügt, ihr findet sie in den globalen Templates: 
+<h1>New Templates</h1>
+The following new templates are added; you can find them within the global templates:
 
 <ul>
 <li>header_inplaykalender
@@ -26,21 +26,19 @@ Es wird folgende Templates neu hinzugefügt, ihr findet sie in den globalen Temp
 <li>inplaykalender_day_bit
 <li>inplaykalender_day_bit_popup
 <li>inplaykalender_month_bit
-<li>inplaykalender_nav 
-<li>inplaykalender_nav_add 
+<li>inplaykalender_nav
+<li>inplaykalender_nav_add
 <li>inplaykalender_no_day_bit
 </ul>
 
-<h1>Templateänderungen</h1>
-Dem Header-Template wird die Variable {$header_inplaykalender} hinzugefügt. Sie zeigt den Kalender oben im Header an.
+<h1>Template Modifications</h1>
+The variable `{$header_inplaykalender}` is added to the header template. This displays the calendar at the top of the header.
 
-<h1>Neues CSS</h1>
-All' euren Designs wird ein inplaykalender.css hinzugefügt. 
-
-<h1>Demo</h1>
+<h1>New CSS</h1>
+An `inplaykalender.css` file is added to all of your themes. <h1>Demo</h1>
 
 <center>
-  <a href="https://snipboard.io/7IUOre.jpg"><img src="https://snipboard.io/7IUOre.jpg" /></a>
+<a href="https://snipboard.io/7IUOre.jpg"><img src="https://snipboard.io/7IUOre.jpg" /></a>
 
 <img src="https://snipboard.io/97UJLk.jpg" />
 
@@ -48,11 +46,11 @@ All' euren Designs wird ein inplaykalender.css hinzugefügt.
 
 <a href="https://belle.eightletters.de">Live Demo</a></center>
 
-<h1>Inplayzeitraum eintragen</h1>
-Den Inplayzeitraum tragt ihr im ACP unter <b>Konfiguration &bull; Inplaykalender Einstellungen</b> ein. Gebt eure Spielmonate mit Komma getrennt an (kein Leerzeichen dazwischen)! Die richtige Angabe ist <b>sehr wichtig</b>. <br /><br />
+<h1>Entering the In-Play Period</h1>
+You can enter the in-play period in the ACP under <b>Configuration &bull; In-Play Calendar Settings</b>. List your game months separated by commas (with no spaces in between)! Entering this information correctly is <b>very important</b>. <br /><br />
 
-Was, wenn ihr zum Jahreswechsel spielt? Zum Beispiel im November und Dezember des Jahres 2020, aber im Januar 2021? Ganz einfach: ihr könnt Inplaymonate auch wiefolgt angeben: <b>November 2020,Dezember 2020,Januar 2021</b> (auch hier kein Leerzeichen zwischen den Kommata!). Der Kalender auf der Kalender-Hauptseite inplaykalender.php wird davon ab immer das Jahr anzeigen, das ihr als Spieljahr im ACP eingetragen habt. 
+What if your game spans a New Year? For example, if you are playing in November and December of 2020, but also in January of 2021? It's quite simple: you can also specify in-play months as follows: <b>November 2020,December 2020,Januar 2021</b> (again, no spaces between the commas here!). From now on, the calendar displayed on the main calendar page (inplaykalender.php) will always show the specific year you have entered as your game year in the ACP.
 
-Ihr könnt beliebig viele Monate anzeigen lassen - ich empfehle aber maximal drei. ;) 
+You can choose to display as many months as you like—though I recommend a maximum of three. ;)
 
-Viel Spaß.
+Enjoy!
