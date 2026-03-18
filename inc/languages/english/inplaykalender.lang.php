@@ -1,14 +1,14 @@
 <?php
 // general
-$l['inplaykalender'] = "Inplaykalender";
-$l['inplaykalender_monat'] = "Monat";
-$l['inplaykalender_jahr'] = "Jahr";
+$l['inplaykalender'] = "In-Play Calendar";
+$l['inplaykalender_monat'] = "Month";
+$l['inplaykalender_jahr'] = "Year";
 $l['inplaykalender_add'] = "Event hinzuf&uuml;gen";
 $l['inplaykalender_events'] = "Inplay-Events";
 
 // klassen
-$l['inplaykalender_class_scenes'] = "szenen";
-$l['inplaykalender_class_birthday'] = "geburtstag";
+$l['inplaykalender_class_scenes'] = "Scenes";
+$l['inplaykalender_class_birthday'] = "birthday";
 $l['inplaykalender_class_timeline'] = "timeline";
 $l['inplaykalender_class_event'] = "event";
 
@@ -49,19 +49,19 @@ $l['inplaykalender_samstag'] = "Samstag";
 $l['inplaykalender_sonntag'] = "Sonntag";
 
 // event hinzuf�gen
-$l['inplaykalender_event_name'] = "Name des Events";
-$l['inplaykalender_event_date'] = "Datum";
-$l['inplaykalender_event_date_start'] = "Startdatum";
-$l['inplaykalender_event_date_end'] = "Enddatum";
-$l['inplaykalender_event_desc'] = "Beschreibung";
-$l['inplaykalender_added'] = "Dein Event wurde hinzugef&uuml;gt!";
+$l['inplaykalender_event_name'] = "Event Name";
+$l['inplaykalender_event_date'] = "Date";
+$l['inplaykalender_event_date_start'] = "Start date";
+$l['inplaykalender_event_date_end'] = "End date";
+$l['inplaykalender_event_desc'] = "Description";
+$l['inplaykalender_added'] = "Your event has been added!";
 
 // thread an event kn�pfen
-$l['inplaykalender_event_thread'] = "Verkn&uuml;pftes Event";
-$l['inplaykalender_event_thread_desc'] = "Zu welchem Event geh&ouml;rt diese Szene?";
-$l['inplaykalender_event_thread_select'] = "Event ausw&auml;hlen";
+$l['inplaykalender_event_thread'] = "Linked Event";
+$l['inplaykalender_event_thread_desc'] = "To which event does this scene belong?";
+$l['inplaykalender_event_thread_select'] = "Select Event";
 
-$l['inplaykalender_scenes'] = "Inplayszenen";
-$l['inplaykalender_birthday'] = "Geburtstage";
-$l['inplaykalender_timeline'] = "Chronik-Events";
+$l['inplaykalender_scenes'] = "In-play scenes";
+$l['inplaykalender_birthday'] = "Birthdays";
+$l['inplaykalender_timeline'] = "Chronicle Events";
  ?>
